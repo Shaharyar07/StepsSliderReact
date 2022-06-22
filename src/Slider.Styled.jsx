@@ -58,12 +58,26 @@ export const Step = styled.button`
 `;
 
 export const Thumb = styled(motion.button)`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 20px;
   height: 20px;
   padding: 0;
   border: none;
   border-radius: 50%;
   background: #f5f5f5;
+  position: absolute;
+  z-index: 1;
+`;
+export const BlueDot = styled(motion.button)`
+ 
+  width: 5px;
+  height: 5px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: #5f60ff;
   position: absolute;
   z-index: 1;
 `;

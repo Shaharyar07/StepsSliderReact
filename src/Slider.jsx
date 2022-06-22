@@ -15,6 +15,7 @@ import {
   Thumb,
   PopUp,
   Arrow,
+  BlueDot,
   Tooltip,
 } from "./Slider.Styled";
 
@@ -176,11 +177,13 @@ function StepSlider({ steps }) {
             }}
             onKeyDown={handleThumpPress}
           >
-            <PopUp>
-              <Arrow />
-              <Tooltip>{getLabel()}</Tooltip>
-              <Arrow />
-            </PopUp>
+            <BlueDot>
+              <PopUp>
+                <Arrow />
+                <Tooltip>{getLabel()}</Tooltip>
+                <Arrow />
+              </PopUp>
+            </BlueDot>
           </Thumb>
         </Wrap>
       )}
